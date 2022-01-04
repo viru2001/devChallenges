@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --gray1: #333333;
+  --gray2: #4f4f4f;
+  --gray3: #bdbdbd;
+  --white: #fff;
+}
+* {
+  box-sizing: border-box;
+}
+body{
+  display:flex; 
+  flex-direction:column;
+  height:100vh; 
+  margin:0; 
+  padding: 0;
+}
+footer{
+  margin-top:auto; 
+}
+.small-title,
+.error-heading,
+.error-description,
+.back-btn {
+  font-style: normal;
+  font-weight: bold;
+}
+.small-title,
+.back-btn {
+  text-transform: uppercase;
+}
+.small-title {
+  font-family: "Inconsolata", monospace;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+
+  color: var(--gray1);
+}
+
+.scarecrow-img {
+  width: 100%;
+  height: auto;
+  /* margin-top: 5%; */
+}
+
+.error-heading,
+.error-description,
+.back-btn {
+  font-family: "Space Mono", monospace;
+  color: var(--gray1);
+}
+.error-heading {
+  font-size: 48px;
+  line-height: 71px;
+  letter-spacing: -0.035em;
+  text-align: center;
+}
+.error-description {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+  text-align: start;
+  color: var(--gray2);
+  width: 92%;
+  margin: 4% 8%;
+}
+
+.back-btn {
+  background-color: var(--gray1);
+  color: var(--white);
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  padding: 5%;
+  margin: 5% 7%;
+}
+
+.footer-text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-align: center;
+  color: var(--gray3);
+}
+
+@media (min-width: 768px) {
+  .main-content-container {
+    display: flex;
+    margin-top: 5%;
+  }
+  .scarecrow-img{
+    width: 80%;
+    margin: 10%;
+  }
+  .text-content-div{
+    margin-left: 5%;
+  }
+  .error-heading {
+    font-size: 64px;
+    line-height: 95px;
+    text-align: start;
+  }
+  .error-description {
+    font-size: 24px;
+    line-height: 36px;
+    width: 70%;
+    margin: 0;
+  }
+  .back-btn{
+    margin: 5% 0;
+    padding: 3%;
+  }
+}
